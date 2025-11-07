@@ -537,20 +537,20 @@ return {
 				return "%2l:%-2v"
 			end
 
-			-- ... and there is more!
-			--  Check out: https://github.com/echasnovski/mini.nvim
-			local base16 = require("mini.base16")
-			local f = assert(io.open(vim.fs.abspath("~/.cache/wal/colors.json")))
-			local colors = vim.json.decode(f:read("*a"))
-			f:close()
-			local wal_palette = {}
-			for k, v in pairs(colors["colors"]) do
-				wal_palette["base" .. string.format("%02X", tonumber(string.sub(k, 6)))] = v
-			end
-
-			base16.setup({
-				palette = wal_palette,
-			})
+			-- -- ... and there is more!
+			-- --  Check out: https://github.com/echasnovski/mini.nvim
+			-- local base16 = require("mini.base16")
+			-- local f = assert(io.open(vim.fs.abspath("~/.cache/wallust/colors.json")))
+			-- local colors = vim.json.decode(f:read("*a"))
+			-- f:close()
+			-- local wal_palette = {}
+			-- for k, v in pairs(colors["colors"]) do
+			-- 	wal_palette["base" .. string.format("%02X", tonumber(string.sub(k, 6)))] = v
+			-- end
+			--
+			-- base16.setup({
+			-- 	palette = wal_palette,
+			-- })
 
 			local starter = require("mini.starter")
 			starter.setup({
