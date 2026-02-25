@@ -1,2 +1,4 @@
 spell/
 lazy-lock.json
+colors/
+lua/base16.lua
